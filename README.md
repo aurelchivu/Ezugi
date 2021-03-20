@@ -1,19 +1,31 @@
-To run this project, you need to have node.js installed.
+## To run this app, you need to have node.js installed
 
-1.Clone the repo
+## Clone the repo
+
+``` bash
 git clone https://github.com/aurelchivu/Ezugi.git
+```
 
-2.Setup React Application
+## Setup React Application
+
+``` bash
 cd frontend
 npm install
+```
 
-3.Setup Node Server
+## Setup Node Server
+
+``` bash
 cd ..
 npm install
+```
 
-4.Put your video files both in frontend/public/videos and backend/videos
+## Put your video files both in frontend/public/videos and backend/videos
 
-5.Start the servers
+## Start the servers
+
+``` bash
 npm run dev
+```
 
-6.Enjoy!
+## Enjoy

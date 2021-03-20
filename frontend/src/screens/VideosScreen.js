@@ -24,7 +24,12 @@ const VideosScreen = () => {
 
   const getVideos = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:5000/videos`);
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+      const { data } = await axios.get(`http://localhost:5000/videos`, config);
       setVideos(data);
     } catch (error) {
       console.log(error);
@@ -36,7 +41,7 @@ const VideosScreen = () => {
   }, []);
 
   return (
-    <div className='row equal'>
+    <div>
       <Form>
         <Form.Group controlId='video'>
           <Form.Control
