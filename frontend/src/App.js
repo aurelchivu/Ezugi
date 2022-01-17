@@ -16,11 +16,11 @@ const App = () => {
       <main className='py-3'>
         <Container>
           <Route path='/' component={HomeScreen} exact />
-          <Route path='/about' component={AboutScreen} exact />
-          <Route path='/login' component={LoginScreen} exact />
-          <Route path='/register' component={RegisterScreen} exact />
+          <Route path='/about' component={AboutScreen} />
+          <Route path='/login' component={LoginScreen} />
+          <Route path='/register' component={RegisterScreen} />
           <Route path='/videos' component={VideosScreen} exact />
-          <Route path='/videos/:name' component={Video} exact />
+          <Route path='/videos/:name' component={Video} />
         </Container>
       </main>
       <Footer />
